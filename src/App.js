@@ -8,14 +8,15 @@ import {
 
 //pages
 import Home from './pages/Home';
-
+import Detail from './pages/Detail';
 
 function App() {
   return (
     <Router>
       <div>
         <Switch>
-          <Route path="/" component={Home} />
+          <Route exact path="/" component={Home} />
+          <Route path="/char/:char_id" component={Detail} />
         </Switch>
       </div>
     </Router>
