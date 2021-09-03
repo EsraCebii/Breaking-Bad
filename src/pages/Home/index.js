@@ -54,7 +54,8 @@ function Home() {
             <div style={{padding: '20px 0 40px 0', textAlign:'center'}}>
                 {status === 'loading' && <Loading /> }
                 {hasNextPage && status !== 'loading' && (
-                    <button onClick={()=>dispatch(fetchCharacters(nextPage))}>Load more ({nextPage})</button>
+                    <button onClick={()=>dispatch(fetchCharacters(nextPage))}
+                    >Load more ({nextPage})</button>
                 )}
                 {
                     !hasNextPage && <div>The end</div>

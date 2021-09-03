@@ -25,7 +25,7 @@ function Quotes () {
         return <Error message={error} />
     }
     return <div style={{padding: 10}}>
-        <h1>Quotes</h1>
+        <h1 style={{color:"greenyellow"}}>Quotes</h1>
         {status === 'loading' && <Loading />}
         {
             status === 'succeeded' && data.map((item) => <Item key={item.quote_id} item={item} />)

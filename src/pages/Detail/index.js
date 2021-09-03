@@ -21,7 +21,7 @@ function Detail () {
         {char &&(
             <div>
                 {loading && <Loading />}
-                <h1>{char.name}</h1>
+                <h1 style={{color:"greenyellow", marginBottom:"5px"}}>{char.name}</h1>
                 <img src={char.img} alt="" style={{width: "50%"}}></img>
             </div>
         )}

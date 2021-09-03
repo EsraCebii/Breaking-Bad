@@ -19,10 +19,21 @@ function App() {
       <nav>
         <ul>
           <li>
-            <Link to="/">Characters</Link>
+            <Link to="/"><h1 style={{ color: "yellow" }}>Characters</h1></Link>
           </li>
           <li>
-            <Link to="/quotes">Quotes</Link>
+            <Link to="/quotes"><h1 style={{ color: "yellow" }}>Quotes</h1></Link>
+          </li>
+          <li>
+            <div className="title">
+              <p>
+                <span class="seasonNum">05</span>
+                <span class="B br">Br</span>eaking
+              </p>
+              <p class="bad">
+                <span class="episodeNum">09</span>
+                <span class="B">Ba</span>d</p>
+            </div>
           </li>
         </ul>
       </nav>
